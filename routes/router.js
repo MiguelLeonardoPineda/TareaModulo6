@@ -1,13 +1,10 @@
 const express = require("express");
-
-// Creamos un router, que es como un mini-servidor solo para rutas
 const router = express.Router();
 
-// Importamos los controladores
 const paginasController = require("../controllers/paginasController");
 const usuariosController = require("../controllers/usuariosController");
 
-// Rutas de paginas
+
 router.get("/", paginasController.mostrarInicio);
 router.get("/status", paginasController.mostrarStatus);
 
